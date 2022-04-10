@@ -1,0 +1,158 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+body
+{
+    font-family: "Akkurat-Light",Helvetica,Arial,"Lucida Grande",sans-serif;
+    scroll-behavior: smooth;
+}
+
+.bookmark-header
+{
+    background-image: url(../images/pexels-photo-1111318.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.form-head h1,
+.form-head p
+{
+    text-shadow:  0 0 2px #fff;
+}
+.form-head h1
+{
+    font-size: 2.265rem;
+    font-weight:bold ;
+
+}
+.form-head p
+{
+    font-size: 1.5625rem;
+}
+label {
+    color: #fff; font-size: 20px;
+}
+.form-control::-webkit-input-placeholder {
+    color: #9e9995;
+}
+.form-control::-moz-placeholder {
+    color: #9e9995;
+}
+.form-control:-ms-input-placeholder {
+    color: #9e9995;
+}
+.form-control::-ms-input-placeholder {
+    color: #9e9995;
+}
+.form-control::placeholder {
+    color: #9e9995;
+}
+.btn-pink {
+    color: #fff !important;
+    -webkit-transition: background-color 0.5s,color 0.5s;
+    -o-transition: background-color 0.5s,color 0.5s;
+    transition: background-color 0.5s,color 0.5s;
+    border: 1px solid #fc46cf !important;
+    background-color: #fc46cf !important;
+
+}
+
+
+.btn-pink:hover {
+    background-color: #fff !important;
+    color: #fc46cf !important;
+}
+.to-down-arrow,
+.to-up-arrow
+{
+    background: #fc46cf;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.to-down-arrow
+{
+    position: relative;
+
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 20px;
+
+}
+.to-up-arrow
+{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+}
+.bookmark-card
+{
+    border-radius: 0.3rem;
+    border: 0.3px solid #ced4da;
+    -webkit-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+
+}
+.bookmark-card:hover
+{
+    background-color: #f5efe5;
+
+}
+#emptyInputAlert
+{
+    font-size: 1.25rem;
+}
+@media screen and (max-width :575.98px)
+{
+    .form-width,.display-table-body
+    {
+        width: 85% !important;
+    }
+}
+
+@media screen and (min-width :576px) and (max-width :767.98px)
+{
+    .form-width,.display-table-body
+    {
+        width: 80% !important;
+    }
+}
+@media screen and (min-width :768px) and (max-width :991.98px)
+{
+    .form-width,.display-table-body
+    {
+        width: 75% !important;
+    }
+}
+@media screen and (min-width :992px) and (max-width :1199.98px)
+{
+    .form-width,.display-table-body
+    {
+        width: 55% !important;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png">
+
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="bookmark-header" id="to-up">
+    <div class="container text-white ">
+        <div class="form-container d-flex align-items-center justify-content-center">
+            <div class="form-width w-50 my-5 py-5 ">
+                <div class="text-center  ">
+                    <div class="form-head text-center mb-5">
+                        <h1>Bookmark</h1>
+                        <p>Bookmark your favorite sites</p>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Site Name</label> <span class="text-danger"> * </span>
+                    <input
+                            type="text"
+                            id="bookmarkName"
+                            class="form-control mt-1"
+                            placeholder="&nbsp; Bookmark Name"
+                    />
+                    <div id="bookmarkNameAlert" class="alert alert-danger d-none">
+                        BookmarkName must start with capital letter, contains 4:10 characters
+                    </div>
+                </div>
+                <div class="form-group pt-3">
+                    <label>Site URL</label> <span class="text-danger"> * </span>
+                    <input
+                            type="text"
+                            id="bookmarkUrl"
+                            class="form-control mt-1"
+                            placeholder="&nbsp; Bookmark URL"
+                    />
+                    <div id="bookmarkUrlAlert" class="alert alert-danger d-none">
+                        <ul>
+                            <li>
+                                The URL starts with either HTTP or HTTPS and
+                            </li>
+                            <li>
+                                then followed by :// and
+                            </li>
+                            <li> then it must contain www. and
+                            </li>
+                            <li> then followed by a subdomain of length (2, 256) and
+                            </li>
+                            <li>The last part contains the domain.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="form-group text-center mt-5">
+                    <p id="emptyInputAlert" class="text-danger"></p>
+                    <button class="btn btn-pink" id="submitBtn" disabled>Add Bookmark</button>
+                </div>
+
+
+            </div>
+            <div class="to-up-arrow">
+                <a href="#to-up" class="text-decoration-none text-white">
+                    <i class="fas fa-chevron-up"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+<div class="to-down-arrow">
+    <a href="#to-down" class="text-decoration-none text-white">
+        <i class="fas fa-chevron-down"></i>
+    </a>
+</div>
+
+<section class="pt-5 pb-3" id="to-down">
+    <div class="container">
+        <div class="display-table-body w-50 m-auto">
+
+            <div class="form-group mt-3 mb-5">
+                <input type="text" id="searchInput" class="form-control" placeholder="&#xf002; &nbsp; Search"
+                       style="font-family: FontAwesome"/>
+            </div>
+
+            <div id="bookmarkCardContainer">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="footer-content text-center">
+            <hr>
+            <p> CopyRight &copy; 2019 Bookmarker</p>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js"></script>
+
+</body>
+</html>
